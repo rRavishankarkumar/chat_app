@@ -1,5 +1,5 @@
-import Conversation from "../models/conversation.model.js";
-import Message from "../models/message.model.js";
+//import Conversation from "../models/conversation.model.js";
+//import Message from "../models/message.model.js";
 
 export const sendMessage = async (req, res) => {
     try{
@@ -9,12 +9,13 @@ export const sendMessage = async (req, res) => {
         const senderId = req.user_id;
 
         let conversation = await Conversation.findOne({
-            participants: {$all: [senderId, reciverId] },
+            participants: { $all: [senderId, reciverId] },
         });
 
         if(!conversation){
             conversation = await Conversation.create({
                 participants: [senderId, reciverId],
+                
             })
         }
 

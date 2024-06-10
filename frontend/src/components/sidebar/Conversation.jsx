@@ -8,8 +8,8 @@ const Conversation = () => {
             </div>
         </div>
         <div className='flex flex-col flex-1'>
-            <div>
-                <p></p>
+            <div className='flex gap-3 justify-between'>
+                <p className='font-bold text-gray-200 '>Ravishankar</p>
                 <span>🍅</span>
             </div>
 

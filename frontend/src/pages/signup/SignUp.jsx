@@ -38,7 +38,7 @@ const signUp = () => {
               <label className='label p-2'>
                 <span className='text-base label-text'>Username</span>
               </label>
-              <input type='text' placeholder='full name' className='w-full input input-border h-10'
+              <input type='text' placeholder='ravishankar2508' className='w-full input input-border h-10'
               value={inputs.username}
               onChange={(e) => setInputs({...inputs,username: e.target.value})}/>
             </div>
@@ -47,7 +47,7 @@ const signUp = () => {
               <label className='label p-2'>
                 <span className='text-base label-text'>Password</span>
               </label>
-              <input type='text' placeholder='full name' className='w-full input input-border h-10'
+              <input type='text' placeholder='Enter Password' className='w-full input input-border h-10'
                 value={inputs.password}
                 onChange={(e) => setInputs({...inputs, password: e.target.value})}
               />
@@ -57,7 +57,7 @@ const signUp = () => {
               <label className='label p-2'>
                 <span className='text-base label-text'>Confirm Password</span>
               </label>
-              <input type='text' placeholder='full name' className='w-full input input-border h-10'
+              <input type='text' placeholder='Confirm Password' className='w-full input input-border h-10'
                 value={inputs.confirmPassword}
                 onChange={(e) => setInputs({...inputs, confirmPassword: e.target.value})}
               />

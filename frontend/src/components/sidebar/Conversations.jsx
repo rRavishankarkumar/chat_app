@@ -13,7 +13,7 @@ const Conversations = () => {
                 <Conversation 
                 key = {conversation._id}
                 conversation={conversation} 
-                emojis={getRandomEmoji}
+                emoji={getRandomEmoji()}
                 lastIdx = { idx === conversations.length - 1 }
                 />
             ))}

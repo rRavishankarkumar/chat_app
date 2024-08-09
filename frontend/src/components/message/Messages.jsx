@@ -19,11 +19,7 @@ const Messages = () => {
             messages.length > 0 && 
             messages.map((message) =>(
              <div key={message._id}
-                 ref={lastMessageRef}
-                 //style={{
-                    //scrollTop: lastMessageRef.current?.offsetTop || 0,
-                 //}}
-   
+                ref={lastMessageRef}
              >
                 <Message message={message} />
              </div>
